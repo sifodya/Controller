@@ -1,5 +1,4 @@
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
+
 #include <main.h>
 #include <Display.h>
 #include <handelDisplay.h>

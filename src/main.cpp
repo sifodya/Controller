@@ -13,6 +13,14 @@
 RotaryEncoder rotaryEncoder;
 Joystick joystick;
 
+int valueX, valueY = 0;
+int oldValueX, oldValueY = 0;
+int deltaX, deltaY = 0;
+int smoothedX, smoothedY = 0;
+int scaleValueX, scaleValueY = 0;
+int rotaryValue1, rotaryValue2, rotaryValue3, rotaryValue4, rotaryValue5, rotaryValue6, rotaryValue7, rotaryValue8 = 0;
+bool screenReseted = true;
+
 void setup()
 {
   delay(500);

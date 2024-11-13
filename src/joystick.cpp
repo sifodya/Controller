@@ -1,6 +1,6 @@
 #include <joystick.h>
 #include <Arduino.h>
-#include <handleMidi.h>
+#include <handelMidi.h>
 #include <Display.h>
 #include <pins.h>
 #include <main.h>

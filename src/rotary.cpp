@@ -2,7 +2,7 @@
 #include <Arduino.h>
 #include <rotary.h>
 #include <Display.h>
-#include <handleMidi.h>
+#include <handelMidi.h>
 #include <pins.h>
 #include <main.h>
 
