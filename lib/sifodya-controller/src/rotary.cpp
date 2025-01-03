@@ -1,9 +1,6 @@
-#include <SimpleRotary.h>
-#include <Arduino.h>
 #include <rotary.h>
 #include <Display.h>
 #include <handelMidi.h>
-#include <pins.h>
 #include <main.h>
 
 void RotaryEncoder::encoderPage()

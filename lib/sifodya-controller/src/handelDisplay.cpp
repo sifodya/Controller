@@ -1,10 +1,13 @@
-
-#include <main.h>
 #include <Display.h>
 #include <handelDisplay.h>
+#include <main.h>
 
 //SSH1106
 //U8glib library by oliver
+
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
+unsigned long currentTime = 0;
+unsigned long elapsedTime = 0;
 
 void blackScreen(unsigned long screenTimeout)
 {

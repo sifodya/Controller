@@ -1,11 +1,16 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <Arduino.h>
+
 #define MAX_ADC 1023 //max value read by adc
 #define DELTA_THRESHOLD 3 //threshold to output midi data
 #define ALPHA 0.9 // smoothing factor (0.0 to 1.0)
 #define SCREEN_TIMEOUT 5000 //Screen return to black time in ms
 #define MIDI_CHANNEL 3 //midi output channel
 
+extern int digitalPagePins[1];
+extern int analogPins[2];
+extern int digitalEncoderPins[2];
 
 extern int valueX, valueY;
 extern int oldValueX, oldValueY;
@@ -13,8 +18,8 @@ extern int deltaX, deltaY;
 extern int smoothedX, smoothedY;
 extern int scaleValueX, scaleValueY;
 //int Index = 0;
-int buttonPageState = 0;
-int buttonPage = 1;
+extern int buttonPageState;
+extern int buttonPage;
 //int encoderPage = 1;
 //int oldRotaryValue = 0;
 //int valueX1, valueX2, valueY1, valueY2;
@@ -48,11 +53,11 @@ extern int rotaryValue1, rotaryValue2, rotaryValue3, rotaryValue4, rotaryValue5,
 //int rotaryNumbers [8] = {1, 2, 3, 4, 5, 6, 7, 8};
 //int buttonNumbers [8] = {1, 2, 3, 4, 5, 6, 7, 8};
 
-bool buttonState =0;
-bool oldButtonState = 1;
+extern bool buttonState;
+extern bool oldButtonState;
 extern bool screenReseted;
 
-unsigned long startTime;
+extern unsigned long startTime;
 extern unsigned long currentTime;
 extern unsigned long elapsedTime;
 
