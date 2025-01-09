@@ -1,6 +1,6 @@
-#include <SimpleRotary.h>
 #ifndef ROTARY_H
 #define ROTARY_H
+#include <SimpleRotary.h>
 
 class RotaryEncoder
 {
@@ -12,11 +12,11 @@ class RotaryEncoder
     {64, 65, 66, 67, 68, 69, 70, 71},
     };
     int indexEncoderPage = 1;
+    int encoderIndex = 1;
     int buttonState = 0;
     int oldButtonState = 1;
-    int encoderIndex = 1;
 
-    public:
+public:
     RotaryEncoder()
     {
     }
@@ -24,6 +24,7 @@ class RotaryEncoder
     void encoderPage();
     void rotaryDisplayUpdate(int rotaryValue, int index);
     int rotaryValueCheck(int rotaryValue);
+
     ~RotaryEncoder()
     {}
 };

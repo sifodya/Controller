@@ -1,13 +1,11 @@
 #include <joystick.h>
-#include <Arduino.h>
-#include <handelMidi.h>
 #include <Display.h>
-#include <pins.h>
+#include <handelMidi.h>
 #include <main.h>
 
 void Joystick::updatedDisplay(int joystickValueX, int joystickValueY)
 {
-    display.clearDisplay();
+  display.clearDisplay();
   display.setTextSize(1);
   display.setTextColor(WHITE);
   display.setCursor(0, 2);
